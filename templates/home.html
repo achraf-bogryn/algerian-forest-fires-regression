@@ -72,6 +72,25 @@
           <h2>
                The FWI prediction is {{results}}
           </h2>
+           <!-- <a href="{{ url_for('index') }}" class="btn" style="background:#6c757d; color:#fff; margin-top:20px;">Back to Home</a> -->
+                <a href="{{ url_for('index') }}" 
+             class="btn" 
+             style="
+                background: linear-gradient(90deg, #868f96 0%, #596164 100%);
+                color: #fff;
+                margin-top: 20px;
+                width: 100%;
+                display: inline-block;
+                font-size: 1em;
+                font-weight: 500;
+                letter-spacing: 1px;
+                border: none;
+                box-shadow: 0 2px 8px rgba(89,97,100,0.15);
+                transition: background 0.2s, color 0.2s;
+             "
+             onmouseover="this.style.background='#343a40';this.style.color='#fff';"
+             onmouseout="this.style.background='linear-gradient(90deg, #868f96 0%, #596164 100%)';this.style.color='#fff';"
+          >&#8592; Back to Home</a>
      </div>
 </body>
 </html>
