@@ -1,1 +1,64 @@
-<h1>Wecome to Home Page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Algerian Forest Fire Prediction</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #fff;
+        }
+        .container {
+            max-width: 600px;
+            margin: 80px auto;
+            background: rgba(0,0,0,0.35);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+            padding: 40px 30px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 18px;
+            letter-spacing: 1px;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+        .btn {
+            background: #43cea2;
+            color: #185a9d;
+            border: none;
+            padding: 14px 36px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            text-decoration: none;
+            box-shadow: 0 2px 8px rgba(67,206,162,0.2);
+        }
+        .btn:hover {
+            background: #185a9d;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Algerian Forest Fire Prediction</h1>
+        <p>
+            Forest fires are a major environmental concern, causing destruction to ecosystems, wildlife, and human settlements. 
+            This project leverages machine learning to predict the Fire Weather Index (FWI), a key indicator of forest fire risk, using real Algerian forest data.<br><br>
+            By providing accurate predictions, we aim to help authorities and communities take timely action to prevent and manage forest fires, protecting nature and lives.
+        </p>
+        <a href="{{ url_for('predict_datapoint') }}" class="btn">Go to Prediction</a>
+    </div>
+</body>
+</html>
